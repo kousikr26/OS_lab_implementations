@@ -1,0 +1,101 @@
+<title>Vdbench output_large_file_ext4/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+03:53:20.135 03:53:20.134 SlaveJvm execution parameter:  '-m localhost'
+03:53:20.136 03:53:20.134 SlaveJvm execution parameter:  '-n localhost-10-201125-03.53.19.728'
+03:53:20.137 03:53:20.134 SlaveJvm execution parameter:  '-l localhost-0'
+03:53:20.137 03:53:20.135 SlaveJvm execution parameter:  '-p 5570'
+03:53:20.137 03:53:20.135 SlaveJvm positional parameter: 'SlaveJvm'
+03:53:20.213 03:53:20.211 successfully connected to master localhost
+03:53:20.213 03:53:20.213 Connection to localhost using port 5570 successful
+03:53:20.593 03:53:20.593 ticks_per_second: 100
+03:53:20.604 03:53:20.604 Message to master: Created anchor directory: /media/usb/large_file_ext4
+03:53:20.625 03:53:20.624 execute(): ls -l /media/usb/large_file_ext4
+03:53:20.663 03:53:20.663 Configuration interpretation took 0.06 seconds
+
+Link to Run Definitions:         <A HREF="#_1599771323">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_1876631416">rd1 For loops: None</A>
+
+03:53:20.923 03:53:20.922 Beginning of run setup
+03:53:20.923 03:53:20.923 File '/var/log/messages' does not exist. Monitoring bypassed
+03:53:20.923 03:53:20.923 **********************
+03:53:20.924 
+03:53:20.924 
+03:53:20.924 03:53:20.923 File '/var/log/messages.1' does not exist. Monitoring bypassed
+03:53:21.006 03:53:21.005 Deleting old file structure.
+03:53:21.006 03:53:21.006 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+03:53:21.011 03:53:21.010 Completed the creation of the directory list for /media/usb/large_file_ext4: 1 directories.
+03:53:21.013 03:53:21.012 Generated 1 file names; total anchor size: 3g (3,221,225,472)
+03:53:21.013 03:53:21.013 Writing control file for anchor=/media/usb/large_file_ext4 at start of run.
+03:53:21.038 03:53:21.038 Completed control file for anchor=/media/usb/large_file_ext4 at start of run.  dirs: 1/0 files: 1/0 sizes: 3g/0/0/0
+03:53:21.045 03:53:21.044 Completed initializeFileAnchor for fsd1: 0.04
+03:53:21.079 03:53:21.079 Started 8 threads for fwd=format,fsd=fsd1
+03:53:21.080 03:53:21.079 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+03:53:21.080 03:53:21.079 Waiting for task synchronization
+03:53:21.080 03:53:21.079 Requesting full garbage collection
+03:53:21.081 03:53:21.081 GcTracker: cum:   2 intv:  0 ms:       0 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    26 free:   102 
+03:53:21.090 03:53:21.090 GcTracker: cum:   3 intv:  1 ms:       8 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    20 free:   108 
+03:53:21.091 03:53:21.090 task_wait_start_complete() end
+
+<a name="_1599771323"></a><i><b>03:53:22.005 Starting RD=format_for_rd1</b></i>
+
+03:53:22.011 03:53:22.011 task_run_all(): 9 tasks
+03:53:22.080 03:53:22.079 Message to master: anchor=/media/usb/large_file_ext4 mkdir complete.
+04:00:00.428 04:00:00.427 Message to master: anchor=/media/usb/large_file_ext4 create complete.
+04:00:00.536 04:00:00.536 
+04:00:00.537 04:00:00.536 Miscellaneous statistics:
+04:00:00.538 04:00:00.537 FILE_CREATES        Files created:                                    1
+04:00:00.538 04:00:00.538 DIRECTORY_CREATES   Directories created:                              1
+04:00:00.539 04:00:00.539 WRITE_OPENS         Files opened for write activity:                  1
+04:00:00.540 04:00:00.539 DIR_BUSY_MKDIR      Directory busy (mkdir):                           1
+04:00:00.540 04:00:00.540 DIR_EXISTS          Directory may not exist (yet):                    3
+04:00:00.541 04:00:00.540 FILE_CLOSES         Close requests:                                   1
+04:00:00.541 04:00:00.541 
+04:00:00.543 04:00:00.542 Java Heap in MB. max: 1024.000; current:  128.000; used:   63.656; free:   64.344
+04:00:00.544 04:00:00.544 Maximum native memory allocation:    1,048,576; Current allocation:    1,048,576
+04:00:01.051 04:00:01.051 Writing control file for anchor=/media/usb/large_file_ext4 at end of run.
+04:00:01.138 04:00:01.138 Completed control file for anchor=/media/usb/large_file_ext4 at end of run.  dirs: 1/1 files: 1/1 sizes: 3g/3g/1/3g
+04:00:01.139 04:00:01.139 End of run
+04:00:01.139 04:00:01.139 **********
+04:00:01.139 
+04:00:01.139 
+04:00:01.169 04:00:01.168 Beginning of run setup
+04:00:01.169 04:00:01.169 **********************
+04:00:01.169 
+04:00:01.169 
+04:00:01.221 04:00:01.221 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+04:00:01.222 04:00:01.222 Reading control file for anchor=/media/usb/large_file_ext4
+04:00:01.223 04:00:01.223 Completed reading control file.
+04:00:01.223 04:00:01.223 Completed the creation of the directory list for /media/usb/large_file_ext4: 1 directories.
+04:00:01.225 04:00:01.225 Generated 1 file names; total anchor size: 3g (3,221,225,472)
+04:00:01.225 04:00:01.225 No deletes and creates. Control file not cleared.
+04:00:01.225 04:00:01.225 During anchor creation for anchor=/media/usb/large_file_ext4 there were 1 directories and 1 files
+04:00:01.226 04:00:01.226 Completed initializeFileAnchor for fsd1: 0.00
+04:00:01.233 04:00:01.232 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=read
+04:00:01.233 04:00:01.233 Started 2 FwgThreads for rd=rd1 For loops: None
+04:00:01.233 04:00:01.233 Waiting for task synchronization
+04:00:01.233 04:00:01.233 task_wait_start_complete: FwgThread read /media/usb/large_file_ext4 1
+04:00:01.434 04:00:01.433 Requesting full garbage collection
+04:00:01.436 04:00:01.435 GcTracker: cum:   4 intv:  0 ms:       0 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    69 free:    59 
+04:00:01.459 04:00:01.459 GcTracker: cum:   5 intv:  1 ms:      21 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    21 free:   107 
+04:00:01.460 04:00:01.459 task_wait_start_complete() end
+
+<a name="_1876631416"></a><i><b>04:00:02.001 Starting RD=rd1; elapsed=10; fwdrate=100; For loops: None</b></i>
+
+04:00:02.003 04:00:02.002 task_run_all(): 3 tasks
+04:00:12.150 04:00:12.149 
+04:00:12.150 04:00:12.149 Miscellaneous statistics:
+04:00:12.150 04:00:12.150 READ_OPENS          Files opened for read activity:                   1
+04:00:12.151 04:00:12.151 FILE_BUSY           File busy:                                    9,038
+04:00:12.152 04:00:12.151 FILE_CLOSES         Close requests:                                   1
+04:00:12.152 04:00:12.151 
+04:00:12.153 04:00:12.152 Java Heap in MB. max: 1024.000; current:  128.000; used:   23.878; free:  104.122
+04:00:12.154 04:00:12.153 Maximum native memory allocation:    1,056,768; Current allocation:        8,192
+04:00:12.154 04:00:12.153 Writing control file for anchor=/media/usb/large_file_ext4 at end of run.
+04:00:12.204 04:00:12.203 Completed control file for anchor=/media/usb/large_file_ext4 at end of run.  dirs: 1/1 files: 1/1 sizes: 3g/3g/1/3g
+04:00:12.204 04:00:12.204 End of run
+04:00:12.205 04:00:12.204 **********
+04:00:12.205 
+04:00:12.205 
+04:00:12.825 04:00:12.825 Master is requesting slave shutdown
+04:00:12.827 04:00:12.826 Java Heap in MB. max: 1024.000; current:  128.000; used:   25.325; free:  102.675

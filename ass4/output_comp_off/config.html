@@ -1,0 +1,173 @@
+<title>Vdbench output_comp_off/config.html</title><pre>
+Output from script /home/eklavya/Desktop/OS/4/vdbench/linux/config.sh: 
+
+Wednesday 25 November 2020 01:57:30 AM IST
+>>>>>uname -a
+Linux eklavya 5.4.0-54-generic #60-Ubuntu SMP Fri Nov 6 10:37:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Wednesday 25 November 2020 01:57:30 AM IST
+>>>>>ifconfig -a
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 170594  bytes 28033880 (28.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 170594  bytes 28033880 (28.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.29.62  netmask 255.255.255.0  broadcast 192.168.29.255
+        inet6 2405:201:401b:314d:b6e:b33:5a:7b8f  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::2c34:bfa5:fd1c:bc18  prefixlen 64  scopeid 0x20<link>
+        inet6 2405:201:401b:314d:f415:a9a2:afc9:15d2  prefixlen 64  scopeid 0x0<global>
+        ether 14:4f:8a:e2:ba:ad  txqueuelen 1000  (Ethernet)
+        RX packets 10572532  bytes 9518141066 (9.5 GB)
+        RX errors 0  dropped 14  overruns 0  frame 0
+        TX packets 4572272  bytes 3653543481 (3.6 GB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Wednesday 25 November 2020 01:57:30 AM IST
+>>>>>id
+uid=0(root) gid=0(root) groups=0(root)
+Wednesday 25 November 2020 01:57:30 AM IST
+>>>>>mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,noexec,relatime,size=5972936k,nr_inodes=1493234,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=1200268k,mode=755)
+/dev/sdb2 on / type ext4 (rw,relatime,errors=remount-ro)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
+none on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=28,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=1282)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+/var/lib/snapd/snaps/code_50.snap on /snap/code/50 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/chromium_1411.snap on /snap/chromium/1411 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core_10126.snap on /snap/core/10126 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/chromium_1399.snap on /snap/chromium/1399 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-28-1804_128.snap on /snap/gnome-3-28-1804/128 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-34-1804_60.snap on /snap/gnome-3-34-1804/60 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core_10185.snap on /snap/core/10185 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core18_1932.snap on /snap/core18/1932 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-28-1804_145.snap on /snap/gnome-3-28-1804/145 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/vlc_1620.snap on /snap/vlc/1620 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gtk-common-themes_1506.snap on /snap/gtk-common-themes/1506 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/heroku_4007.snap on /snap/heroku/4007 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/snap-store_481.snap on /snap/snap-store/481 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/vlc_1700.snap on /snap/vlc/1700 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/snap-store_467.snap on /snap/snap-store/467 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/snapd_9721.snap on /snap/snapd/9721 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/dev/sdb1 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+/var/lib/snapd/snaps/sublime-text_85.snap on /snap/sublime-text/85 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/heroku_3999.snap on /snap/heroku/3999 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-34-1804_36.snap on /snap/gnome-3-34-1804/36 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/snapd_9607.snap on /snap/snapd/9607 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core18_1885.snap on /snap/core18/1885 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/code_49.snap on /snap/code/49 type squashfs (ro,nodev,relatime,x-gdu.hide)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=1200264k,mode=700,uid=1000,gid=1000)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+/dev/fuse on /run/user/1000/doc type fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+tmpfs on /run/snapd/ns type tmpfs (rw,nosuid,nodev,noexec,relatime,size=1200268k,mode=755)
+nsfs on /run/snapd/ns/snap-store.mnt type nsfs (rw)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+zfs1 on /zfs1 type zfs (rw,xattr,noacl)
+zfs_pool on /zfs_pool type zfs (rw,xattr,noacl)
+Wednesday 25 November 2020 01:57:30 AM IST
+>>>>>memory
+MemTotal:       12002672 kB
+MemFree:         4148608 kB
+MemAvailable:    6125304 kB
+Buffers:          727492 kB
+Cached:          1896776 kB
+SwapCached:         2456 kB
+Active:          4922176 kB
+Inactive:        1501028 kB
+Active(anon):    3505244 kB
+Inactive(anon):  1006320 kB
+Active(file):    1416932 kB
+Inactive(file):   494708 kB
+Unevictable:      215144 kB
+Mlocked:              80 kB
+SwapTotal:       2097148 kB
+SwapFree:        2012668 kB
+Dirty:              1960 kB
+Writeback:             0 kB
+AnonPages:       4012944 kB
+Mapped:           951168 kB
+Shmem:            744048 kB
+KReclaimable:     388024 kB
+Slab:             649128 kB
+SReclaimable:     388024 kB
+SUnreclaim:       261104 kB
+KernelStack:       25176 kB
+PageTables:        48920 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     8098484 kB
+Committed_AS:   14970740 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      374136 kB
+VmallocChunk:          0 kB
+Percpu:             7968 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:     1422344 kB
+DirectMap2M:    10895360 kB
+DirectMap1G:     1048576 kB
+              total        used        free      shared  buff/cache   available
+Mem:       12002672     4842032     4148348      744048     3012292     6125044
+Low:       12002672     7854324     4148348
+High:             0           0           0
+Swap:       2097148       84480     2012668
+Wednesday 25 November 2020 01:57:30 AM IST
+>>>>>ps -ef | grep -i vdb
+root       76104    1005  0 00:40 ?        00:00:00 sudo ./vdbench -f ./dedup_off -o output_off
+root       76105   76104  0 00:40 ?        00:00:00 /bin/bash ./vdbench -f ./dedup_off -o output_off
+root       76107   76105  1 00:40 ?        00:00:53 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f ./dedup_off -o output_off
+root       76133   76107  0 00:40 ?        00:00:00 /bin/bash /home/eklavya/Desktop/OS/4/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-201125-00.40.56.504 -l localhost-0 -p 5570
+root       76137   76133  0 00:40 ?        00:00:30 java -client -Xmx1024m -Xms128m -cp /home/eklavya/Desktop/OS/4/vdbench/:/home/eklavya/Desktop/OS/4/vdbench/classes:/home/eklavya/Desktop/OS/4/vdbench/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-10-201125-00.40.56.504 -l localhost-0 -p 5570
+eklavya    85004    1005  0 00:58 ?        00:00:10 okular /home/eklavya/Desktop/OS/4/vdbench.pdf
+root       98842   82748  0 01:57 pts/2    00:00:00 sudo ./vdbench -f ./compression_off -o output_comp_off
+root       98846   98842  0 01:57 pts/2    00:00:00 /bin/bash ./vdbench -f ./compression_off -o output_comp_off
+root       98848   98846 99 01:57 pts/2    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f ./compression_off -o output_comp_off
+root       98882   98848  0 01:57 pts/2    00:00:00 /bin/bash /home/eklavya/Desktop/OS/4/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-201125-01.57.30.079 -l localhost-0 -p 5570
+root       98886   98882 71 01:57 pts/2    00:00:00 java -client -Xmx1024m -Xms128m -cp /home/eklavya/Desktop/OS/4/vdbench/:/home/eklavya/Desktop/OS/4/vdbench/classes:/home/eklavya/Desktop/OS/4/vdbench/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-10-201125-01.57.30.079 -l localhost-0 -p 5570
+root       98938   98848  0 01:57 pts/2    00:00:00 /bin/bash /home/eklavya/Desktop/OS/4/vdbench/linux/config.sh -o /home/eklavya/Desktop/OS/4/vdbench/output_comp_off localhost
+root       98954   98938  0 01:57 pts/2    00:00:00 grep -i vdb
+

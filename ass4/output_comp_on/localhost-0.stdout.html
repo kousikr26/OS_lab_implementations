@@ -1,0 +1,100 @@
+<title>Vdbench output_comp_on/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+02:03:16.243 02:03:16.242 SlaveJvm execution parameter:  '-m localhost'
+02:03:16.247 02:03:16.243 SlaveJvm execution parameter:  '-n localhost-10-201125-02.03.15.869'
+02:03:16.247 02:03:16.243 SlaveJvm execution parameter:  '-l localhost-0'
+02:03:16.248 02:03:16.243 SlaveJvm execution parameter:  '-p 5570'
+02:03:16.249 02:03:16.243 SlaveJvm positional parameter: 'SlaveJvm'
+02:03:16.303 02:03:16.302 successfully connected to master localhost
+02:03:16.304 02:03:16.303 Connection to localhost using port 5570 successful
+02:03:16.598 02:03:16.598 ticks_per_second: 100
+02:03:16.603 02:03:16.603 Message to master: Created anchor directory: /zfs_pool/compression_on/
+02:03:16.621 02:03:16.620 execute(): ls -l /zfs_pool/compression_on/
+02:03:16.659 02:03:16.658 Configuration interpretation took 0.06 seconds
+
+Link to Run Definitions:         <A HREF="#_1599771323">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_1876631416">rd1 For loops: None</A>
+
+02:03:16.870 02:03:16.870 Beginning of run setup
+02:03:16.870 02:03:16.870 File '/var/log/messages' does not exist. Monitoring bypassed
+02:03:16.871 02:03:16.870 **********************
+02:03:16.871 
+02:03:16.872 
+02:03:16.873 02:03:16.870 File '/var/log/messages.1' does not exist. Monitoring bypassed
+02:03:16.936 02:03:16.936 Deleting old file structure.
+02:03:16.937 02:03:16.937 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+02:03:16.941 02:03:16.940 Completed the creation of the directory list for /zfs_pool/compression_on/: 25 directories.
+02:03:16.942 02:03:16.942 Generated 50 file names; total anchor size: 1000m (1,048,576,000)
+02:03:16.942 02:03:16.942 Writing control file for anchor=/zfs_pool/compression_on/ at start of run.
+02:03:16.973 02:03:16.972 Completed control file for anchor=/zfs_pool/compression_on/ at start of run.  dirs: 25/0 files: 50/0 sizes: 1000m/0/0/0
+02:03:16.982 02:03:16.979 Completed initializeFileAnchor for fsd1: 0.04
+02:03:17.015 02:03:17.015 Started 8 threads for fwd=format,fsd=fsd1
+02:03:17.016 02:03:17.015 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+02:03:17.016 02:03:17.015 Waiting for task synchronization
+02:03:17.016 02:03:17.016 Requesting full garbage collection
+02:03:17.017 02:03:17.017 GcTracker: cum:   2 intv:  0 ms:       0 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    26 free:   102 
+02:03:17.027 02:03:17.027 GcTracker: cum:   3 intv:  1 ms:       8 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    20 free:   108 
+02:03:17.027 02:03:17.027 task_wait_start_complete() end
+
+<a name="_1599771323"></a><i><b>02:03:18.003 Starting RD=format_for_rd1</b></i>
+
+02:03:18.013 02:03:18.012 task_run_all(): 9 tasks
+02:03:18.511 02:03:18.511 Message to master: anchor=/zfs_pool/compression_on/ mkdir complete.
+02:03:54.993 02:03:54.993 Message to master: anchor=/zfs_pool/compression_on/ create complete.
+02:03:55.101 02:03:55.100 
+02:03:55.101 02:03:55.100 Miscellaneous statistics:
+02:03:55.101 02:03:55.101 FILE_CREATES        Files created:                                   50
+02:03:55.101 02:03:55.101 DIRECTORY_CREATES   Directories created:                             25
+02:03:55.101 02:03:55.101 WRITE_OPENS         Files opened for write activity:                 50
+02:03:55.102 02:03:55.101 DIR_EXISTS          Directory may not exist (yet):                    4
+02:03:55.102 02:03:55.102 FILE_CLOSES         Close requests:                                  50
+02:03:55.102 02:03:55.102 
+02:03:55.102 02:03:55.102 Java Heap in MB. max: 1024.000; current:  128.000; used:   28.685; free:   99.315
+02:03:55.103 02:03:55.102 Maximum native memory allocation:    1,048,576; Current allocation:    1,048,576
+02:03:56.054 02:03:56.053 Writing control file for anchor=/zfs_pool/compression_on/ at end of run.
+02:03:56.088 02:03:56.087 Completed control file for anchor=/zfs_pool/compression_on/ at end of run.  dirs: 25/25 files: 50/50 sizes: 1000m/1000m/50/1000m
+02:03:56.088 02:03:56.088 End of run
+02:03:56.088 02:03:56.088 **********
+02:03:56.088 
+02:03:56.088 
+02:03:56.205 02:03:56.205 Beginning of run setup
+02:03:56.206 02:03:56.206 **********************
+02:03:56.206 
+02:03:56.206 
+02:03:56.259 02:03:56.259 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+02:03:56.260 02:03:56.260 Reading control file for anchor=/zfs_pool/compression_on/
+02:03:56.262 02:03:56.262 Completed reading control file.
+02:03:56.263 02:03:56.262 Completed the creation of the directory list for /zfs_pool/compression_on/: 25 directories.
+02:03:56.263 02:03:56.263 Generated 50 file names; total anchor size: 1000m (1,048,576,000)
+02:03:56.264 02:03:56.263 No deletes and creates. Control file not cleared.
+02:03:56.264 02:03:56.264 During anchor creation for anchor=/zfs_pool/compression_on/ there were 25 directories and 50 files
+02:03:56.264 02:03:56.264 Completed initializeFileAnchor for fsd1: 0.01
+02:03:56.266 02:03:56.266 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=read
+02:03:56.266 02:03:56.266 Started 2 FwgThreads for rd=rd1 For loops: None
+02:03:56.266 02:03:56.266 Waiting for task synchronization
+02:03:56.266 02:03:56.266 task_wait_start_complete: FwgThread read /zfs_pool/compression_on/ 1
+02:03:56.467 02:03:56.466 Requesting full garbage collection
+02:03:56.469 02:03:56.469 GcTracker: cum:   3 intv:  0 ms:       0 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    33 free:    95 
+02:03:56.499 02:03:56.498 GcTracker: cum:   4 intv:  1 ms:      26 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    21 free:   107 
+02:03:56.499 02:03:56.499 task_wait_start_complete() end
+
+<a name="_1876631416"></a><i><b>02:03:57.001 Starting RD=rd1; elapsed=10; fwdrate=100; For loops: None</b></i>
+
+02:03:57.003 02:03:57.003 task_run_all(): 3 tasks
+02:04:07.144 02:04:07.144 
+02:04:07.144 02:04:07.144 Miscellaneous statistics:
+02:04:07.145 02:04:07.144 READ_OPENS          Files opened for read activity:                   2
+02:04:07.146 02:04:07.145 FILE_BUSY           File busy:                                        1
+02:04:07.146 02:04:07.145 FILE_CLOSES         Close requests:                                   2
+02:04:07.146 02:04:07.145 
+02:04:07.146 02:04:07.145 Java Heap in MB. max: 1024.000; current:  128.000; used:   23.451; free:  104.549
+02:04:07.146 02:04:07.145 Maximum native memory allocation:    1,056,768; Current allocation:        8,192
+02:04:07.146 02:04:07.145 Writing control file for anchor=/zfs_pool/compression_on/ at end of run.
+02:04:07.152 02:04:07.152 Completed control file for anchor=/zfs_pool/compression_on/ at end of run.  dirs: 25/25 files: 50/50 sizes: 1000m/1000m/2/40m
+02:04:07.152 02:04:07.152 End of run
+02:04:07.152 02:04:07.152 **********
+02:04:07.152 
+02:04:07.152 
+02:04:07.775 02:04:07.775 Master is requesting slave shutdown
+02:04:07.775 02:04:07.775 Java Heap in MB. max: 1024.000; current:  128.000; used:   24.219; free:  103.781
